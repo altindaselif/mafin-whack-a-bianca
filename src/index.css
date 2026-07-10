@@ -1,0 +1,53 @@
+/* --- VARIABLES & BASE STYLES --- */
+:root {
+  /* Colors */
+  --color-pink: #f4d3d9;
+  --color-accent: #d81b60;
+  --color-accent-hover: #e91e63;
+  --color-accent-active: #b0124d;
+  --color-white: #ffffff;
+  --color-dark: #2b2b2b;
+  --color-gray: #666666;
+  --color-gray-dark: #4a4a4a;
+  --color-gray-light: #cccccc;
+  --color-barn-interior: #1a1207;
+
+  /* Typography */
+  --font-family-main: "Inter", sans-serif;
+  --font-family-pixel: "Press Start 2P", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--color-pink);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}

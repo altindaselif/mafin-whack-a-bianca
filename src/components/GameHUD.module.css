@@ -1,0 +1,60 @@
+.hud {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  width: 100%;
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+  pointer-events: none;
+  font-family: var(--font-family-pixel);
+}
+
+.lives {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lifeIcon {
+  width: 4rem;
+  height: auto;
+  image-rendering: pixelated;
+  transition:
+    opacity 0.3s,
+    filter 0.3s;
+}
+
+.lifeLost {
+  opacity: 0.3;
+  filter: grayscale(1);
+}
+
+.score {
+  flex: 1;
+  text-align: right;
+  font-size: 1.8rem;
+  color: var(--color-white);
+  text-shadow: 0.2rem 0.2rem 0 var(--color-dark);
+}
+
+.timer {
+  flex: 1;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--color-white);
+  text-shadow: 0.2rem 0.2rem 0 var(--color-dark);
+}
+
+@media (max-width: 950px) {
+  .lifeIcon {
+    width: 3rem;
+  }
+
+  .score,
+  .timer {
+    font-size: 1.3rem;
+  }
+}

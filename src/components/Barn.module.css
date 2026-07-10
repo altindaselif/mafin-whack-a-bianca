@@ -1,0 +1,26 @@
+.barn {
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  background-color: var(--color-barn-interior);
+}
+
+.barnImage {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+  user-select: none;
+  image-rendering: pixelated;
+}
+
+.windowLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

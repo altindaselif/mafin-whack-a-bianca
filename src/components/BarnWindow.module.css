@@ -1,0 +1,124 @@
+.window {
+  position: absolute;
+  overflow: visible;
+  z-index: 1;
+}
+
+.clip {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.character {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  height: auto;
+  cursor: pointer;
+  image-rendering: pixelated;
+  pointer-events: auto;
+  /* Western color grade */
+  filter: sepia(0.85) saturate(0.55) brightness(0.98);
+}
+
+.rise {
+  animation: rise 0.16s ease-out forwards;
+}
+
+@keyframes rise {
+  from {
+    transform: translateX(-50%) translateY(100%);
+  }
+  to {
+    transform: translateX(-50%) translateY(15%);
+  }
+}
+
+.leave {
+  animation: leave 0.15s ease-in forwards;
+}
+
+@keyframes leave {
+  from {
+    transform: translateX(-50%) translateY(15%);
+  }
+  to {
+    transform: translateX(-50%) translateY(101%);
+  }
+}
+
+.fakeOut {
+  animation: fakeOut 0.7s ease-in-out forwards;
+}
+
+@keyframes fakeOut {
+  0% {
+    transform: translateX(-50%) translateY(100%);
+  }
+  35% {
+    transform: translateX(-50%) translateY(55%);
+  }
+  60% {
+    transform: translateX(-50%) translateY(55%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(101%);
+  }
+}
+
+.hitState {
+  animation: shake 0.4s ease-in-out;
+  transform: translateX(-50%) translateY(15%);
+  /* Show character in full color when hit */
+  filter: none;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(15%);
+  }
+  25% {
+    transform: translateX(-56%) translateY(15%);
+  }
+  50% {
+    transform: translateX(-44%) translateY(15%);
+  }
+  75% {
+    transform: translateX(-53%) translateY(15%);
+  }
+}
+
+.hammer {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 50%;
+  height: auto;
+  image-rendering: pixelated;
+  pointer-events: none;
+  animation: hammerSlam 0.3s ease-in forwards;
+  transform-origin: bottom right;
+}
+
+@keyframes hammerSlam {
+  0% {
+    transform: translateX(-50%) translateY(-80%) rotate(-45deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-50%) translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%) rotate(-8deg);
+    opacity: 1;
+  }
+}

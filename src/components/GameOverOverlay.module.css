@@ -1,0 +1,121 @@
+.overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  z-index: 3;
+}
+
+.title,
+.titleWin {
+  font-family: var(--font-family-pixel);
+  color: var(--color-white);
+  text-shadow: 0.3rem 0.3rem 0 var(--color-dark);
+  text-align: center;
+  line-height: 1.4;
+
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.titleWin {
+  font-size: 2.4rem;
+  color: #ffd700;
+}
+
+.button {
+  font-family: var(--font-family-pixel);
+  font-size: 1.4rem;
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  padding: 1.4rem 2.4rem;
+  border: 0.4rem solid var(--color-dark);
+  box-shadow: 0.4rem 0.4rem 0 var(--color-dark);
+  transition:
+    transform 0.1s,
+    box-shadow 0.1s;
+}
+
+.button:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.button:active {
+  transform: translate(0.3rem, 0.3rem);
+  box-shadow: 0.1rem 0.1rem 0 var(--color-dark);
+}
+
+.infoButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 4;
+  width: 3.6rem;
+  height: 3.6rem;
+  font-family: var(--font-family-pixel);
+  font-size: 1.6rem;
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  border: 0.3rem solid var(--color-dark);
+  border-radius: 50%;
+  box-shadow: 0.3rem 0.3rem 0 var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.1s,
+    box-shadow 0.1s;
+}
+
+.infoButton:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.infoButton:active {
+  transform: translate(0.2rem, 0.2rem);
+  box-shadow: 0.1rem 0.1rem 0 var(--color-dark);
+}
+
+@media (max-width: 950px) {
+  .overlay {
+    top: 40%;
+    gap: 5rem;
+  }
+
+  .title,
+  .titleWin {
+    min-height: 4rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .titleWin {
+    font-size: 2rem;
+  }
+
+  .button {
+    font-size: 1.1rem;
+    padding: 1.2rem 2rem;
+  }
+
+  .infoButton {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+}

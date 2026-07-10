@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.list {
+  list-style: none;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.6rem;
+  overflow: hidden;
+}
+
+.rank {
+  width: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.country {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 1rem;
+}
+
+.count {
+  font-weight: 700;
+  color: var(--color-dark);
+  font-variant-numeric: tabular-nums;
+}
+
+.userItem {
+  background-color: var(--color-pink);
+  border-radius: 0.8rem;
+  font-weight: 700;
+}
+
+.userItem .country,
+.userItem .count {
+  color: var(--color-accent);
+}
+
+/* --- PAGINATION --- */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pageButton {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  background-color: var(--color-pink);
+  color: var(--color-dark);
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
+  line-height: 1;
+}
+
+.pageButton:hover:not(:disabled) {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  transform: scale(1.1);
+}
+
+.pageButton:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.pageIndicator {
+  font-size: 1.2rem;
+  color: var(--color-gray);
+  font-weight: 600;
+  min-width: 4rem;
+  text-align: center;
+}
+
+.userBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-pink);
+  padding: 0.9rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(216, 27, 96, 0.1);
+  margin-top: 0.5rem;
+}
+
+.userName {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.userScore {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+}
