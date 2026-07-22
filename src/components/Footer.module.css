@@ -16,6 +16,14 @@
   line-height: 1.6;
 }
 
+/* Wider disclaimer on desktop so the longer text fills fewer lines;
+   mobile keeps the narrower, more readable column. */
+@media (min-width: 700px) {
+  .text {
+    max-width: 72rem;
+  }
+}
+
 .kofi {
   display: inline-flex;
   align-items: center;

@@ -37,9 +37,9 @@ export const GAME_CONFIG = {
 
   // Time-based difficulty stages
   DIFFICULTY: [
-    { after: 0, spawnInterval: 530, minSimultaneous: 1, maxSimultaneous: 2, maxActive: 3, lifetime: 920, fakeOut: false },
-    { after: 12, spawnInterval: 460, minSimultaneous: 1, maxSimultaneous: 3, maxActive: 4, lifetime: 840, fakeOut: true },
-    { after: 25, spawnInterval: 410, minSimultaneous: 1, maxSimultaneous: 3, maxActive: 4, lifetime: 770, fakeOut: true },
+    { after: 0, spawnInterval: 545, minSimultaneous: 1, maxSimultaneous: 2, maxActive: 3, lifetime: 960, fakeOut: false },
+    { after: 12, spawnInterval: 475, minSimultaneous: 1, maxSimultaneous: 3, maxActive: 4, lifetime: 880, fakeOut: true },
+    { after: 25, spawnInterval: 425, minSimultaneous: 1, maxSimultaneous: 3, maxActive: 4, lifetime: 810, fakeOut: true },
   ],
 
 };

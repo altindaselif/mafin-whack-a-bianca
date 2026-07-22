@@ -49,14 +49,14 @@ export const translations = {
   footer: {
     es: {
       disclaimerMain:
-        "Esta página es solo por diversión y va dirigida únicamente al personaje ficticio de Bianca Forner, no a la actriz Carolina Román. ¡Es que no soportamos a Bianca para nada!",
+        "Aviso: No tenemos más que respeto y cariño por Carolina Román. Es una actriz increíble y ser testigo de su talento en pantalla es todo un privilegio. ¡Es que no soportamos a Bianca Forner!",
       ps: "(P.D. Os queremos, Alba Brunet y Marta Belmonte.)",
       kofi: "☕ Apoyar a la creadora",
       music: "Música de",
     },
     en: {
       disclaimerMain:
-        "Disclaimer: This page is purely for fun and is aimed solely at the fictional character Bianca Forner, not the actress Carolina Román. We just really can't stand Bianca!",
+        "Disclaimer: We have nothing but respect and love for Carolina Román. She is an amazing actress and witnessing her talent on screen is an absolute privilege! We just really can't stand Bianca Forner.",
       ps: "(P.S. We love you, Alba Brunet and Marta Belmonte.)",
       kofi: "☕ Support the creator",
       music: "Music by",
