@@ -39,7 +39,7 @@ export const GAME_CONFIG = {
   DIFFICULTY: [
     { after: 0, spawnInterval: 545, minSimultaneous: 1, maxSimultaneous: 2, maxActive: 3, lifetime: 960, fakeOut: false },
     { after: 12, spawnInterval: 475, minSimultaneous: 1, maxSimultaneous: 3, maxActive: 4, lifetime: 880, fakeOut: true },
-    { after: 25, spawnInterval: 425, minSimultaneous: 1, maxSimultaneous: 3, maxActive: 4, lifetime: 810, fakeOut: true },
+    { after: 25, spawnInterval: 450, minSimultaneous: 1, maxSimultaneous: 3, maxActive: 4, lifetime: 850, fakeOut: true },
   ],
 
 };
