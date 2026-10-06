@@ -9,13 +9,20 @@ function BarnWindow({ position, character, onHit }) {
     height: `${position.height}%`,
   };
 
-  const handleClick = () => {
+  // Fire on pointer-DOWN, not click: on touch screens a click needs a clean
+  // press+release on the same spot with no movement, which a fast tapping
+  // player rarely gives — so taps get silently dropped ("had to tap 2-3
+  // times"). pointerdown fires the instant the finger lands, for mouse and
+  // touch alike. The whole window cell is the target, not just the sprite,
+  // so grazing the edge still counts.
+  const handlePointerDown = (e) => {
+    e.preventDefault();
     if (onHit) onHit(position.id);
   };
 
   if (!character) {
     return (
-      <div className={styles.window} style={style}>
+      <div className={styles.window} style={style} onPointerDown={handlePointerDown}>
         <div className={styles.clip} />
       </div>
     );
@@ -33,9 +40,9 @@ function BarnWindow({ position, character, onHit }) {
         : styles.rise;
 
   return (
-    <div className={styles.window} style={style}>
+    <div className={styles.window} style={style} onPointerDown={handlePointerDown}>
       <div className={styles.clip}>
-        <img className={`${styles.character} ${animClass}`} src={sprite} alt="" onClick={handleClick} draggable={false} />
+        <img className={`${styles.character} ${animClass}`} src={sprite} alt="" draggable={false} />
         {isHit && <img className={styles.hammer} src="./images/hammer.webp" alt="" draggable={false} />}
       </div>
     </div>
