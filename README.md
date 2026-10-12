@@ -8,7 +8,7 @@
 ## 🔗 Links
 
 - **Live Site:** [View Live Demo](https://mafinesabianca.netlify.app/)
-- **Code:** [View GitHub Repository](https://github.com/altindaselif/31-mafin-whack-a-bianca)
+- **Code:** [View GitHub Repository](https://github.com/altindaselif/mafin-whack-a-bianca)
 
 ---
 
