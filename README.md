@@ -1,6 +1,6 @@
 # 👋 #MAFIN — Whack A Bianca
 
-> _35.000+ hits from fans across the world._  
+> _34,905 hits from fans across the world._  
 > _Whack Bianca 12 times to reunite Marta and Fina — if the peacock, the cow, and Fina herself don't ruin it first._  
 > A fan-made whack-a-mole for the _Sueños de Libertad_ fandom, with a live global hit counter, a real-time country leaderboard, and a fully data-driven game engine built on React 19.
 
@@ -22,7 +22,7 @@
 
 ## 🎭 What Is This?
 
-A fan-made whack-a-mole where _Sueños de Libertad_ viewers whack the fictional villain **Bianca Forner** as she pops out of a barn window. Land **12 hits** and the estranged couple **Marta and Fina** finally reunite — but the barn is a trap. Hit **Fina** by mistake and you lose a life (three mistakes and they divorce), hit the **peacock** and it steals 3 seconds off the clock, hit the **sick cow** and it flashbangs the whole screen for 2 seconds. Every legitimate hit is counted, attributed to the player's country, and aggregated into a live global leaderboard. Fully playable in Spanish and English. The game has taken **35,000+ hits** through organic fandom sharing, with zero paid promotion.
+A fan-made whack-a-mole where _Sueños de Libertad_ viewers whack the fictional villain **Bianca Forner** as she pops out of a barn window. Land **12 hits** and the estranged couple **Marta and Fina** finally reunite — but the barn is a trap. Hit **Fina** by mistake and you lose a life (three mistakes and they divorce), hit the **peacock** and it steals 3 seconds off the clock, hit the **sick cow** and it flashbangs the whole screen for 2 seconds. Every legitimate hit is counted, attributed to the player's country, and aggregated into a live global leaderboard. Fully playable in Spanish and English. The game has taken **34,905 hits** through organic fandom sharing, with zero paid promotion.
 
 ---
 
