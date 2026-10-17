@@ -1,0 +1,5 @@
+# Depoyu Netlify'a bağlayınca kullanılacak ayarlar.
+# Vite projesi: önce derleniyor, sonra dist klasörü yayınlanıyor.
+[build]
+  command = "npm run build"
+  publish = "dist"
